@@ -1,95 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
 
-    <link rel="icon" href="devchallenges.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+  <link rel="icon" href="devchallenges.png" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
 
-    <title>Devchallenges</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
+  <title>Devchallenges</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Inconsolata:wght@700&family=Raleway:ital,wght@0,400;1,700&family=Space+Mono:wght@400;700&display=swap');
+    /*
+    font-family: 'Climate Crisis',
+    cursive;
+    font-family: 'Inconsolata',
+    monospace;
+    font-family: 'Raleway',
+    sans-serif;
+    font-family: 'Space Mono',
+    monospace;
+    */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    body {
+      max-width: 920px;
+
+      margin: 0 auto;
+
+    }
+
+    .contGeneral {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 24px;
+      font-family: "Inconsolata",
+        monospace;
+      text-transform: uppercase;
+      font-weight: 700;
+
+    }
+
+    .contenido {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .contenido-img img {
+      width: 300px;
+      height: 260px;
+
+    }
+
+    .contenido-info h1 {
+      font-size: 30px;
+      font-family: 'Space Mono',
+        monospace;
+    }
+
+    .contenido-info p {
+      font-size: 20px;
+      font-family: 'Space Mono',
+        monospace;
+
+    }
+
+    button {
+      all: unset;
+      margin-top: 30px;
+      background-color: #333333;
+      font-family: 'Space Mono', monospace;
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 13px 37px;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 100px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media Screen and (max-width:480px) {
+      .contenido {
+        flex-direction: column;
+        justify-content: center;
+
+
       }
 
-      ul {
-        padding-left: 24px;
+      .contenido-img img {
+        width: 200px;
+        height: 220px;
+
       }
 
-      li {
-        margin-bottom: 8px;
+      .contenido-info h1 {
+        margin-top: 50px;
       }
+    }
+  </style>
+</head>
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+<body>
+  <section class="contGeneral">
+    <h2>404 Not found</h2>
+    <div class="contenido">
+      <div class="contenido-img">
+        <img src="./Scarecrow.png" alt="Espantapajaros-imagen">
       </div>
+      <div class="contenido-info">
+        <h1>I have bad news <br>
+          for you</h1>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+        <p>The page you are looking
+          for might be removed or is
+          temporality unavailable
+        </p>
+        <button class="button">Back to Home</button>
+      </div>
     </div>
-  </body>
+
+  </section>
+  <footer>
+    <div>
+      <p>created by Magupe@94</p>
+    </div>
+  </footer>
+
+
+
+</body>
+
 </html>
